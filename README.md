@@ -1,2 +1,1 @@
-# demo-cart
-demo-app
+# cart
