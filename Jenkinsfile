@@ -70,7 +70,7 @@ pipeline {
         withSonarQubeEnv ('SonarqubeScanner') {
             sh 'echo SonarQube Analysis'
             sh 'echo ${scannerHome}'
-		sh '${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=${DOCKER_REPO_NAME}-${DEPLOYMENT_STAGE} -Dsonar.qualitygate=my_custom_quality_gate''
+		sh '${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=${DOCKER_REPO_NAME}-${DEPLOYMENT_STAGE} -Dsonar.qualitygate=my_custom_quality_gate'
          }
 // Sonarqube Quality Gate
          sh 'echo SonarQube Quality gate'
